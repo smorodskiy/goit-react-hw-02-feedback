@@ -5,16 +5,15 @@ class FeedbackOptions extends Component {
   constructor(props) {
     super(props);
   }
-  countTotalFeedback = () => {};
-  countPositiveFeedbackPercentage = () => {};
 
   render() {
+    const { options, onLeaveFeedback } = this.props;
     return (
-      <div>        
-        <button onClick={1}>Good</button>
-        <button onClick={1}>Neutral</button>
-        <button onClick={1}>Bad</button>
-      </div>
+      <>
+        {options.map(btn => {
+          return <button id={btn} key={btn} onClick={onLeaveFeedback}>{btn}</button>;
+        })}
+      </>
     );
   }
 }
