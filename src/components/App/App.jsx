@@ -30,13 +30,19 @@ class App extends Component {
   onLeaveFeedbackHandle = e => {
     switch (e.target.id) {
       case 'Good':
-        this.setState({ good: this.state.good + 1 });
+        this.setState(prevState => {
+          return { good: prevState.good + 1 };
+        });
         break;
       case 'Neutral':
-        this.setState({ neutral: this.state.neutral + 1 });
+        this.setState(prevState => {
+          return { neutral: prevState.neutral + 1 };
+        });
         break;
       case 'Bad':
-        this.setState({ bad: this.state.bad + 1 });
+        this.setState(prevState => {
+          return { bad: prevState.bad + 1 };
+        });
         break;
       default:
         break;
