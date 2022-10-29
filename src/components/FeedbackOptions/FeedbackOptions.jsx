@@ -3,17 +3,17 @@ import { Component } from 'react';
 
 // Check types of props
 import PropTypes from 'prop-types';
-// import { List, Image, Item, Status, Name } from './FriendList.styled';
+import { Button, ButtonsGroup } from './FeedbackOptions.styled';
 
 class FeedbackOptions extends Component {
   render() {
     const { options, onLeaveFeedback } = this.props;
     return (
-      <>
+      <ButtonsGroup>
         {options.map(btn => {
-          return <button id={btn} key={btn} onClick={onLeaveFeedback}>{btn}</button>;
+          return <Button id={btn} key={btn} onClick={onLeaveFeedback}>{btn}</Button>;
         })}
-      </>
+      </ButtonsGroup>
     );
   }
 }
