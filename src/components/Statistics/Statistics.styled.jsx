@@ -23,4 +23,5 @@ export const Badge = styled.span`
   padding-right: 0.6em;
   padding-left: 0.6em;
   border-radius: 10rem;
+  line-height: 1;
 `;
