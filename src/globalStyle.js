@@ -36,12 +36,12 @@ const GlobalStyle = createGlobalStyle`
     body {
       /* background: #e7ecf2; */
       /* background-image: linear-gadient(to bottom right, #ff9eaa 0% 65%, #e860ff 95% 100%); */
-      background: linear-gradient(to right, transparent, mistyrose);
+      /* background: linear-gradient(to right, transparent, mistyrose); */
       margin: 0;
-      /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif; */
-      font-family: 'Jost', sans-serif;
+        sans-serif;
+      /* font-family: 'Jost', sans-serif; */
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }

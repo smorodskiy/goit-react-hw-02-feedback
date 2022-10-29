@@ -1,19 +1,24 @@
 import React from 'react';
 import { Component } from 'react';
 
+// Check types of props
+import PropTypes from 'prop-types';
+
 class Section extends Component {
-  constructor(props) {
-    super(props);
-    this.title = props.title
-  }
   render() {
+    const { title, children } = this.props;
     return (
       <section>
-        <h2>{this.title}</h2>        
-        {this.props.children}
+        <h2>{title}</h2>
+        {children}
       </section>
     );
   }
 }
 
 export { Section };
+
+// Types
+Section.propTypes = {
+  title: PropTypes.string.isRequired,  
+};

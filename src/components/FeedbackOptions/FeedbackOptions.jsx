@@ -1,11 +1,11 @@
 import React from 'react';
 import { Component } from 'react';
 
-class FeedbackOptions extends Component {
-  constructor(props) {
-    super(props);
-  }
+// Check types of props
+import PropTypes from 'prop-types';
+// import { List, Image, Item, Status, Name } from './FriendList.styled';
 
+class FeedbackOptions extends Component {
   render() {
     const { options, onLeaveFeedback } = this.props;
     return (
@@ -19,3 +19,9 @@ class FeedbackOptions extends Component {
 }
 
 export { FeedbackOptions };
+
+// Types
+FeedbackOptions.propTypes = {
+  options: PropTypes.array.isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
+};
